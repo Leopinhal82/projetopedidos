@@ -6,5 +6,5 @@ import com.leo.springboot.models.Pedido;
 
 
 public interface PedidoRepository extends JpaRepository<Pedido, Long>{
-	Pedido findById(long id);
+	Pedido findByIdPedido(long id);
 }

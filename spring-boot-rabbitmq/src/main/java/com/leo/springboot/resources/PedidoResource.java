@@ -68,8 +68,8 @@ public class PedidoResource {
 		try {
 			
 		
-			Cliente cliente = cr.findById(Long.parseLong(arrOfStr[0]));
-			Produto produto = prr.findById(Long.parseLong(arrOfStr[1]));
+			Cliente cliente = cr.findByIdCliente(Long.parseLong(arrOfStr[0]));
+			Produto produto = prr.findByIdProduto(Long.parseLong(arrOfStr[1]));
 			
 			if(cliente.getIdCliente() == 0 || produto.getIdProduto() == 0) {
 				return ResponseEntity.notFound().build();
